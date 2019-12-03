@@ -8,3 +8,4 @@ repository: itruett/sunnskyeslabradors.com
 theme: minima
 sass:
     style: compressed
+base-url: /sunnyskyeslabradors.com

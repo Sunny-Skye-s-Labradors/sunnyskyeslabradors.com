@@ -5,19 +5,19 @@ layout: compress
 <html lang=en>
 	<head>
 		{% if jekyll.environment == "production" %}
-			<script async src="https://www.googletagmanager.com/gtag/js?id=TODO"></script>
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-5893602-15"></script>
 			<script>
 				window.dataLayer = window.dataLayer || [];
 				function gtag(){dataLayer.push(arguments);}
 				gtag('js', new Date());
-				gtag('config', 'TODO');
+				gtag('config', 'UA-5893602-15');
 			</script>
 		{% endif %}
 		<title>{{ page.title }}</title>
 		<meta charset=utf-8>
 		<meta name=Description content="{{ page.description }}">
 		<meta name=viewport content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="/assets/main.css">
+		<link rel="stylesheet" href="{{ "assets/main.css" | relative_url }}">
 		{% seo title=false %}
 		{{ page.head }}
 	</head>
