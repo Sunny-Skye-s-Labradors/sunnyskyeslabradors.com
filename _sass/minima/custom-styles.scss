@@ -1,0 +1,9 @@
+.site-nav .page-link {
+  display: inline;
+}
+
+@include media-query($on-palm) {
+  .site-nav .page-link {
+    display: list-item;
+  }
+}
