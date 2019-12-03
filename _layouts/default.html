@@ -1,0 +1,33 @@
+---
+layout: compress
+---
+<!doctype html>
+<html lang=en>
+	<head>
+		{% if jekyll.environment == "production" %}
+			<script async src="https://www.googletagmanager.com/gtag/js?id=TODO"></script>
+			<script>
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+				gtag('config', 'TODO');
+			</script>
+		{% endif %}
+		<title>{{ page.title }}</title>
+		<meta charset=utf-8>
+		<meta name=Description content="{{ page.description }}">
+		<meta name=viewport content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/assets/main.css">
+		{% seo title=false %}
+		{{ page.head }}
+	</head>
+	<body>
+		<section class="content">
+			{% include header.html %}
+
+			{{ content }}
+
+			{% include footer.html %}
+		</section>
+	</body>
+</html>
